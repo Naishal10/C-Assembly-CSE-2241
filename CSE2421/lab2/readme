@@ -1,0 +1,66 @@
+
+Name: Naishal Patel
+
+I certify that I completed all of the work myself with no aid from anyone aside from the instructor or the undergraduate graders.
+
+
+Part 1:
+
+Q1: Briefly justify why you created the test files you’re including with your lab. To help you write this answer, consider the following: what potential failure point does this test file cover? What kind of test case does this file represent, a routine, boundary, or challenging case? 
+
+Ans1: I created four test files. The first file contained 8 characters as a routine check. The second file had 12 characters to test how the code will function when the number of characters in the file isn’t a multiple of 8. The third file had 5 characters to test how the code would function if there isn’t any complete set of 8 characters. The final file was a longer excerpt of the lab manual to make sure the code functioned as expected at scale.
+
+Q2: Copy down the 8 characters in your required test file as well as the 7 characters in your “expected output” file. Why did you choose the characters that you did? 
+
+Ans2: I choose that because it would be easy to encrypt it by using hand and figure out what the actual encryption of this text would be.
+
+Q3: Describe one way that this encryption scheme could be modified (from an algorithmic perspective) quickly and easily in the event that this particular strategy was foiled. Note that there are a lot of possible correct answers to this question! 
+
+Ans3: The positions of the “h” bit insertions can be shifted to the right by one bit.
+
+Q4: As a follow-up to the question above, describe at a high level how we could generalize our code such that an extra input or macro could swap between schemes. 
+
+Ans4: The number of bits to shift by can be defined using an input.
+
+Part 2:
+
+Q1: You may have noticed something unexpected/bad can happen with this scheme as described. Namely, it is possible to correctly follow the encryption scheme, then immediately correctly follow the decryption scheme, and then end up with garbage as a result. How could this happen? Why? 
+
+Q2: Describe one way that the problem in Q1 could be fixed. Once again, there are many correct answers here! 
+
+Ans1:  This could happen because If the 8th character, which carries the bits for encryption, has one or more bits set to 1 in positions that are not utilized for encryption, the unexpected result may result. These unused bits are replaced in the encryption algorithm by the bits from the previous characters. Since they were not used in the encryption process, these overwritten bits are not returned to their original values after decryption. The result is that unexpected or junk bits may be present in the decrypted character.
+
+Ans2: One way to fix the problem described in Q1 is to ensure that the unused bits in the 8th character are preserved during encryption and properly restored during decryption. 
+
+Part 3:
+
+
+Q1: Did you choose to mangle a copy of your encryption code or your decryption code? Why? 
+
+Ans1: I choose to do that because in case something goes wrong I know what can I did wrong and may be able to fix it.
+
+Q2: Answer this question honestly: at the time of writing this question, is it easy for you to read and understand what your mangled code does? Do you think it would be several months from now? 
+
+Ans2: At this time I don’t think its hard for me to know what my code does but I can say for sure that it would be hard for me to understand.
+
+Q3: In this portion of the lab, you took what was (ostensibly) good code and made it hard to read. Do you think that it would be easier or harder to take hard to read code and make it good? Why? 
+And now for some questions about the lab as a whole: 
+
+
+Ans3: It would be harder to make a hard code to good code beached fort hat to happened I need to understand the hard code first which would be tough to do.
+
+Q4: Some of you may have noticed that there is an unwritten assumption about the input data that makes a dramatic impact on the functionality of this encryption/decryption scheme. What’s the unwritten assumption? 
+
+Ans4: Assuming that the file is not empty.
+Another assumption is that the input contains all the valid characters.
+
+Q5: If this assumption is not true, what part of the process could fail? 
+
+Ans5: If the assumption is not true then the actual encryption or decryption part could fail.
+
+
+
+
+
+
+

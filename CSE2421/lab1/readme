@@ -1,0 +1,100 @@
+Name: Naishal Patel
+
+I certify that I completed all of the work myself with no aid from anyone aside from the instructor or the undergraduate graders.
+
+Part 1:
+
+Q1: Describe the process by which I can accomplish the above task.
+
+Ans) This task could be achieve by using following command:-
+
+mkdir Lab1
+mv lab1.c Lab1
+mv customheader.h Lab1
+mv lab1 Lab1
+
+Q2: Suppose I have a group of files in a directory. Describe what the following command would do: ls -alrt
+
+Ans) The command ls -alrt is used to list files and directories in a directory, which is 
+	->sorted by their modification time in reverse order (-rt), 
+	->including hidden files and directories (-a), 
+	->with detailed information about each file or directory (-l)
+
+Q3: What is the difference between each of the following commands?
+
+[latour.2@cse fl1 cse2421]$ cd
+[latour.2@cse fl1 cse2421]$ cd ~
+[latour.2@cse fl1 cse2421]$ cd .
+[latour.2@cse fl1 cse2421]$ cd ..
+
+Ans) cd without any name after that is equivalent to cd~ and it will change the current 
+directory to the home directory. cd. has no effect and keeps you in the current 
+directory. And at last cd.. moves you up one level to the parent directory.
+
+Part 2:
+
+Q1: Did anything happen? Should anything have happened?
+
+Ans) Nothing happened. 
+Nothing should have happend cause there were no commands to change any files.
+
+Q2: Did anything happen? Should anything have happened? What if you run make again?
+
+Ans) Nothing happened.
+Something should have happened in the background.
+It will modify the date of the file customheader.h to recent.
+
+Q5: What does the numbers file look like now? Why?
+
+Ans) The time changed for makefile in the numbers file. 
+ It has the list of all the files when they were modified and also whad the permission given for each file.
+
+Part 3:
+
+Q1: As we ran the next command, lines (and their line numbers) were printed to the screen. Is that the line that just ran or the next line that is going to be run? How do you know?
+
+Ans) We know this because the next command executes the current line and moves to the next line in the program.
+
+Q2: What... what just happened? What was the value of i at first? What was it the next time we printed it? Why? What about at the end? Why? Did the output change? Why?
+
+Ans) At first the i's value is 1, then it again printed 1 because we did nnot chnage the value of i. After that command, we set the value of i as 5 so the out was based on that which is the the value is odd.
+
+Q3: What if I wanted to step into the function? How would I do that?
+
+Ans) It could be done by using the function step.
+
+Q4: Did the output change? If so, how did it change and why? If not, why not?
+
+Ans) Yes,the output changed because we changed the value of x in the function itself before running the main function.
+
+Q5: What line caused the crash in proCoder? Why?
+
+Ans) It crashed at line 33 because it divided the number by 0.
+
+Q6: Based on this, what change would you need to make to fix the proCoder.c file? Answer this part honestly: was using gdb faster than it would have been to stare at the code to try to figure out what was happening?
+
+Ans) Instead of having i >= 0, change it to i > 0.  
+Yes, becasue gbd helped me find the exact location of crash. 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

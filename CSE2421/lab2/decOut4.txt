@@ -1,0 +1,14 @@
+
+your task is to create an alternative implementation to your code in either 
+Part 1 or Part 2. MAKE SURE THAT YOU CREATE A COPY OF THE FILE BEFORE YOU START 
+EDITING. IT WOULD BE A TRAVESTY FOR YOU TO RUIN SOMETHING YOU ALREADY WORKED ON
+FOR SO LONG. Your code should be as unreadable as possible while still maintain
+ing the full functionality. For full credit, your code should include at least 
+one goto, break, and continue. Additionally, there should be at least one loop 
+or if construct without a block under it, and at least one conditional that uses
+ an implicit comparison rather than an explicit one. While not an expectation, 
+feel free to rename variables to be have similar and nondescriptive names, 
+delete comments, and put multiple statements on the same line. Please remember,
+ however, that the code must still function identically to whichever of your 
+functions you rewrote. The graders will test for this. EOF
+

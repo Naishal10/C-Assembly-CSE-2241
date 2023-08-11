@@ -1,0 +1,237 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls   s/call   s/call  name    
+ 54.39     10.08    10.08 200000000     0.00     0.00  popStack1
+  9.83     11.90     1.82 200000000     0.00     0.00  enqueueQueue2
+  8.20     13.42     1.52 200000000     0.00     0.00  dequeueQueue2
+  6.71     14.66     1.24 200000000     0.00     0.00  pushStack2
+  5.47     15.68     1.01 200000000     0.00     0.00  enqueueQueue1
+  3.68     16.36     0.68 200000000     0.00     0.00  dequeueQueue1
+  3.49     17.01     0.65 200000000     0.00     0.00  pushStack1
+  2.60     17.49     0.48        2     0.24     2.78  QueueTest1
+  2.57     17.97     0.48 200000000     0.00     0.00  popStack2
+  2.49     18.43     0.46        2     0.23     6.48  StackTest1
+  0.32     18.49     0.06                             main
+  0.27     18.54     0.05        1     0.05     0.05  newQueue1
+  0.19     18.57     0.04        1     0.04     0.04  newStack1
+  0.11     18.59     0.02        1     0.02     0.02  newStack2
+  0.00     18.59     0.00        1     0.00     0.00  delQueue1
+  0.00     18.59     0.00        1     0.00     0.00  delQueue2
+  0.00     18.59     0.00        1     0.00     0.00  delStack1
+  0.00     18.59     0.00        1     0.00     0.00  delStack2
+  0.00     18.59     0.00        1     0.00     0.00  newQueue2
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2016 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.05% of 18.59 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.06   18.53                 main [1]
+                0.46   12.50       2/2           StackTest1 [2]
+                0.48    5.09       2/2           QueueTest1 [4]
+-----------------------------------------------
+                0.46   12.50       2/2           main [1]
+[2]     69.7    0.46   12.50       2         StackTest1 [2]
+               10.08    0.00 200000000/200000000     popStack1 [3]
+                1.24    0.00 200000000/200000000     pushStack2 [7]
+                0.65    0.00 200000000/200000000     pushStack1 [10]
+                0.48    0.00 200000000/200000000     popStack2 [11]
+                0.04    0.00       1/1           newStack1 [13]
+                0.02    0.00       1/1           newStack2 [14]
+                0.00    0.00       1/1           delStack2 [18]
+                0.00    0.00       1/1           delStack1 [17]
+-----------------------------------------------
+               10.08    0.00 200000000/200000000     StackTest1 [2]
+[3]     54.2   10.08    0.00 200000000         popStack1 [3]
+-----------------------------------------------
+                0.48    5.09       2/2           main [1]
+[4]     30.0    0.48    5.09       2         QueueTest1 [4]
+                1.82    0.00 200000000/200000000     enqueueQueue2 [5]
+                1.52    0.00 200000000/200000000     dequeueQueue2 [6]
+                1.01    0.00 200000000/200000000     enqueueQueue1 [8]
+                0.68    0.00 200000000/200000000     dequeueQueue1 [9]
+                0.05    0.00       1/1           newQueue1 [12]
+                0.00    0.00       1/1           newQueue2 [19]
+                0.00    0.00       1/1           delQueue2 [16]
+                0.00    0.00       1/1           delQueue1 [15]
+-----------------------------------------------
+                1.82    0.00 200000000/200000000     QueueTest1 [4]
+[5]      9.8    1.82    0.00 200000000         enqueueQueue2 [5]
+-----------------------------------------------
+                1.52    0.00 200000000/200000000     QueueTest1 [4]
+[6]      8.2    1.52    0.00 200000000         dequeueQueue2 [6]
+-----------------------------------------------
+                1.24    0.00 200000000/200000000     StackTest1 [2]
+[7]      6.7    1.24    0.00 200000000         pushStack2 [7]
+-----------------------------------------------
+                1.01    0.00 200000000/200000000     QueueTest1 [4]
+[8]      5.5    1.01    0.00 200000000         enqueueQueue1 [8]
+-----------------------------------------------
+                0.68    0.00 200000000/200000000     QueueTest1 [4]
+[9]      3.7    0.68    0.00 200000000         dequeueQueue1 [9]
+-----------------------------------------------
+                0.65    0.00 200000000/200000000     StackTest1 [2]
+[10]     3.5    0.65    0.00 200000000         pushStack1 [10]
+-----------------------------------------------
+                0.48    0.00 200000000/200000000     StackTest1 [2]
+[11]     2.6    0.48    0.00 200000000         popStack2 [11]
+-----------------------------------------------
+                0.05    0.00       1/1           QueueTest1 [4]
+[12]     0.3    0.05    0.00       1         newQueue1 [12]
+-----------------------------------------------
+                0.04    0.00       1/1           StackTest1 [2]
+[13]     0.2    0.04    0.00       1         newStack1 [13]
+-----------------------------------------------
+                0.02    0.00       1/1           StackTest1 [2]
+[14]     0.1    0.02    0.00       1         newStack2 [14]
+-----------------------------------------------
+                0.00    0.00       1/1           QueueTest1 [4]
+[15]     0.0    0.00    0.00       1         delQueue1 [15]
+-----------------------------------------------
+                0.00    0.00       1/1           QueueTest1 [4]
+[16]     0.0    0.00    0.00       1         delQueue2 [16]
+-----------------------------------------------
+                0.00    0.00       1/1           StackTest1 [2]
+[17]     0.0    0.00    0.00       1         delStack1 [17]
+-----------------------------------------------
+                0.00    0.00       1/1           StackTest1 [2]
+[18]     0.0    0.00    0.00       1         delStack2 [18]
+-----------------------------------------------
+                0.00    0.00       1/1           QueueTest1 [4]
+[19]     0.0    0.00    0.00       1         newQueue2 [19]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2016 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+   [4] QueueTest1              [6] dequeueQueue2          [14] newStack2
+   [2] StackTest1              [8] enqueueQueue1           [3] popStack1
+  [15] delQueue1               [5] enqueueQueue2          [11] popStack2
+  [16] delQueue2               [1] main                   [10] pushStack1
+  [17] delStack1              [12] newQueue1               [7] pushStack2
+  [18] delStack2              [19] newQueue2
+   [9] dequeueQueue1          [13] newStack1

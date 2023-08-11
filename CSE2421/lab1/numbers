@@ -1,0 +1,23 @@
+total 44
+-rw-------. 1 patel.4630 domain users    0 May 16 20:12 numbers
+-rw-r--rw-. 1 patel.4630 domain users 1232 May 16 20:11 makefile
+-rw-------. 1 patel.4630 domain users 5223 May 16 20:08 lab1.zip
+-rwx------. 1 patel.4630 domain users 9568 May 16 20:01 lab1
+-rw-------. 1 patel.4630 domain users 3760 May 16 20:01 lab1.o
+-rw-------. 1 patel.4630 domain users  314 May 16 19:20 lab1.c
+-rw-------. 1 patel.4630 domain users 1572 May 16 19:07 readme
+-rw-------. 1 patel.4630 domain users   33 May 16 16:37 customheader.h
+-rw-r--r--. 1 patel.4630 domain users  250 May 16 16:14 headers.sh
+-rw-r--r--. 1 patel.4630 domain users  251 May 16 16:14 headers.awk
+Tue May 16 20:12:36 EDT 2023
+total 48
+-rw-------. 1 patel.4630 domain users  688 May 16 20:12 numbers
+-rw-r--rw-. 1 patel.4630 domain users 1232 May 16 20:11 makefile
+-rw-------. 1 patel.4630 domain users 5223 May 16 20:08 lab1.zip
+-rwx------. 1 patel.4630 domain users 9568 May 16 20:01 lab1
+-rw-------. 1 patel.4630 domain users 3760 May 16 20:01 lab1.o
+-rw-------. 1 patel.4630 domain users  314 May 16 19:20 lab1.c
+-rw-------. 1 patel.4630 domain users 1572 May 16 19:07 readme
+-rw-------. 1 patel.4630 domain users   33 May 16 16:37 customheader.h
+-rw-r--r--. 1 patel.4630 domain users  250 May 16 16:14 headers.sh
+-rw-r--r--. 1 patel.4630 domain users  251 May 16 16:14 headers.awk
